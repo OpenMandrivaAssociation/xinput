@@ -15,6 +15,7 @@ Group:		System/X11
 BuildRequires:	imake
 BuildRequires:	X11-devel
 BuildRequires:	gccmakedep
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Runtime configuration and test of XInput devices
