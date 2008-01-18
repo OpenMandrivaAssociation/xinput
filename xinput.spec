@@ -14,12 +14,14 @@ License:	MIT
 ########################################################################
 # git-format-patch xinput-1.3.0..origin/mandriva
 Patch1: 0001-Apply-patch-from-existing-xinput-package-to-freede.patch
+Patch2: 0002-Quote-version-test-of-xinputproto.patch
 ########################################################################
 BuildRoot:	%{_tmppath}/%{name}-droot
 
 BuildRequires:	x11-util-macros		>= 1.1.5
 BuildRequires:	libx11-devel		>= 1.1.3
 BuildRequires:	libxext-devel		>= 1.0.3
+BuildRequires:	libxi-devel		>= 1.1.3
 
 %description
 Runtime configuration and test of XInput devices
@@ -28,6 +30,7 @@ Runtime configuration and test of XInput devices
 %setup -q
 
 %patch1 -p1
+%patch2 -p1
 
 %build
 autoreconf -ifs
