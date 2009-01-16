@@ -1,6 +1,6 @@
 Name:		xinput
-Version:	1.3.0
-Release:	%mkrel 4
+Version:	1.4.0
+Release:	%mkrel 1
 Summary:	Runtime configuration and test of XInput devices
 Group:		System/X11
 URL:		http://xorg.freedesktop.org
@@ -12,17 +12,11 @@ BuildRequires:	libx11-devel		>= 1.1.3
 BuildRequires:	libxext-devel		>= 1.0.3
 BuildRequires:	libxi-devel		>= 1.1.3
 
-Patch1: 0001-Apply-patch-from-existing-xinput-package-to-freede.patch
-Patch2: 0002-Quote-version-test-of-xinputproto.patch
-
 %description
 Runtime configuration and test of XInput devices
 
 %prep
 %setup -q
-
-%patch1 -p1
-%patch2 -p1
 
 %build
 %configure
