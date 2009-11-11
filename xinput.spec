@@ -1,5 +1,5 @@
 Name:		xinput
-Version:	1.4.2
+Version:	1.5.0
 Release:	%mkrel 1
 Summary:	Runtime configuration and test of XInput devices
 Group:		System/X11
