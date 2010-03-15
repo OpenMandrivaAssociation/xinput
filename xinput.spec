@@ -19,7 +19,7 @@ Runtime configuration and test of XInput devices
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
