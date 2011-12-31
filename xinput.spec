@@ -1,16 +1,16 @@
 Name:		xinput
-Version:	1.5.3
-Release:	%mkrel 2
+Version:	1.5.4
+Release:	1
 Summary:	Runtime configuration and test of XInput devices
 Group:		System/X11
+License:	MIT
 URL:		http://xorg.freedesktop.org
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
-License:	MIT
-BuildRoot:	%{_tmppath}/%{name}-droot
+
 BuildRequires:	x11-util-macros		>= 1.1.5
-BuildRequires:	libx11-devel		>= 1.1.3
-BuildRequires:	libxext-devel		>= 1.0.3
-BuildRequires:	libxi-devel		>= 1.1.3
+BuildRequires:	pkgconfig(x11)		>= 1.1.3
+BuildRequires:	pkgconfig(xext)		>= 1.0.3
+BuildRequires:	pkgconfig(xi)		>= 1.1.3
 
 %description
 Runtime configuration and test of XInput devices
@@ -26,11 +26,8 @@ Runtime configuration and test of XInput devices
 rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
-%{_bindir}/xinput
-%{_mandir}/*/*
 %doc README ChangeLog
+%{_bindir}/xinput
+%{_mandir}/man1/%{name}*
+
