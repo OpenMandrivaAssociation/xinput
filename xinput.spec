@@ -10,8 +10,8 @@ BuildRequires:	x11-util-macros >= 1.1.5
 BuildRequires:	pkgconfig(x11) >= 1.1.3
 BuildRequires:	pkgconfig(xext) >= 1.0.3
 BuildRequires:	pkgconfig(xi) >= 1.1.3
-BuildRequires:	pkgconfig(xrandr) >= 1.1.3
-BuildRequires:	pkgconfig(xinerama) >= 1.1.3
+BuildRequires:	pkgconfig(xrandr)
+BuildRequires:	pkgconfig(xinerama)
 
 %description
 Runtime configuration and test of XInput devices.
