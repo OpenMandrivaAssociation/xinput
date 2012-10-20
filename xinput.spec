@@ -1,6 +1,6 @@
 Name:		xinput
 Version:	1.6.0
-Release:	2
+Release:	3
 Summary:	Runtime configuration and test of XInput devices
 Group:		System/X11
 License:	MIT
