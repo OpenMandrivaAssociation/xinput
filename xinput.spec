@@ -10,6 +10,8 @@ BuildRequires:	x11-util-macros		>= 1.1.5
 BuildRequires:	libx11-devel		>= 1.1.3
 BuildRequires:	libxext-devel		>= 1.0.3
 BuildRequires:	libxi-devel		>= 1.1.3
+BuildRequires:	pkgconfig(xinerama)
+BuildRequires:	pkgconfig(xrandr)
 
 %description
 Runtime configuration and test of XInput devices
