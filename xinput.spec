@@ -7,9 +7,9 @@ URL:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
 BuildRequires:	x11-util-macros		>= 1.1.5
-BuildRequires:	libx11-devel		>= 1.1.3
-BuildRequires:	libxext-devel		>= 1.0.3
-BuildRequires:	libxi-devel		>= 1.1.3
+BuildRequires:	pkgconfig(x11)		>= 1.1.3
+BuildRequires:	pkgconfig(xext)		>= 1.0.3
+BuildRequires:	pkgconfig(xi)		>= 1.1.3
 BuildRequires:	pkgconfig(xinerama)
 BuildRequires:	pkgconfig(xrandr)
 
