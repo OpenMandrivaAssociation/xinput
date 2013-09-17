@@ -1,6 +1,6 @@
 Name:		xinput
-Version:	1.6.0
-Release:	5
+Version:	1.6.1
+Release:	1
 Summary:	Runtime configuration and test of XInput devices
 Group:		System/X11
 URL:		http://xorg.freedesktop.org
@@ -24,14 +24,9 @@ Runtime configuration and test of XInput devices
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/xinput
 %{_mandir}/*/*
 %doc README ChangeLog
