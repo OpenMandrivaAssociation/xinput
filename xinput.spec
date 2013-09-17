@@ -10,6 +10,7 @@ BuildRequires:	x11-util-macros		>= 1.1.5
 BuildRequires:	pkgconfig(x11)		>= 1.1.3
 BuildRequires:	pkgconfig(xext)		>= 1.0.3
 BuildRequires:	pkgconfig(xi)		>= 1.1.3
+BuildRequires:	pkgconfig(xfixes)
 BuildRequires:	pkgconfig(xinerama)
 BuildRequires:	pkgconfig(xrandr)
 
