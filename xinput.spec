@@ -1,6 +1,6 @@
 Name:		xinput
-Version:	1.6.2
-Release:	2
+Version:	1.6.3
+Release:	1
 Summary:	Runtime configuration and test of XInput devices
 Group:		System/X11
 URL:		http://xorg.freedesktop.org
@@ -18,14 +18,14 @@ BuildRequires:	pkgconfig(xrandr)
 Runtime configuration and test of XInput devices.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xinput
