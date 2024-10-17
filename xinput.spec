@@ -3,7 +3,7 @@ Version:	1.6.4
 Release:	1
 Summary:	Runtime configuration and test of XInput devices
 Group:		System/X11
-URL:		http://xorg.freedesktop.org
+URL:		https://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
 BuildRequires:	pkgconfig(xorg-macros)
